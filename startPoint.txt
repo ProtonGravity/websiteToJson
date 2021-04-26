@@ -1,0 +1,35 @@
+
+HELPER FILE
+====================
+
+1) CREATE Array of <p></p> ELEMENTS
+
+
+2) CREATE MAIN FUNCTION function startCreatingJson(){
+
+    3) DEFINE start string of JSON FILE => "["
+
+
+    4) CREATE LOOP for( Query for Each <p></p> ELEMENT){
+
+
+    5) IF Questions LINE
+        6) Remove <strong></strong> from Question                                                  <strong>1. ____ Question loerem ipsum?</strong>
+        7) Add Question to JSON STING                                                              [{"Question: ": "1. ____ Question loerem ipsum?",
+
+    8) IF Answer LINE
+        9) Create Array of Answers For Question Above <br> is delimiter                             [ 'Answer', '<strong>Answer</strong>', 'Answer', 'Answer' ] 
+        10) Get Right Answer NUMBER( 1 or 2 or 3 or 4) for Question Above                           2
+        11) Remove <strong></strong> From Array Of Answers                                          [ 'Answer', 'Answer', 'Answer', 'Answer' ] 
+        12) Add Answers To JSON STRING                                                              [{	"Question: ": "1. ____ Question loerem ipsum?",	"Result: ": "1","Answer1: ": "Answer","Answer2: ": "Answer","Answer3: ": "Answer","Answer4: ": "Answer"}
+        13) Add Comma after each {} => {},  or not if it is the last element of <p></p> Array       [{	"Question: ": "1. ____ Question loerem ipsum?",	"Result: ": "1","Answer1: ": "Answer","Answer2: ": "Answer","Answer3: ": "Answer","Answer4: ": "Answer"},
+} 
+
+    14) END OF JSON ARRAY -> add "]" to end of JSON ARRAY                                           [{	"Question: ": "1. ____ Question loerem ipsum?",	"Result: ": "1","Answer1: ": "Answer","Answer2: ": "Answer","Answer3: ": "Answer","Answer4: ": "Answer"}]
+
+    return JSON STRING           [{	"Question: ": "1. ____ Question loerem ipsum?",	"Result: ": "1","Answer1: ": "Answer","Answer2: ": "Answer","Answer3: ": "Answer","Answer4: ": "Answer"}]
+
+}
+
+
+=======BELOW CALL BACK FUNCTIONS FOR  startCreatingJson()  =====================
